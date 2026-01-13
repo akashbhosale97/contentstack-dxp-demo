@@ -87,7 +87,7 @@ class PersonalizeManager {
     // const variant = await Personalize.getVariant(experienceShortId);
 
     // Demo: Simulate variant selection based on user attributes
-    const variant = this.simulateVariantSelection(experienceShortId);
+    const variant = this.simulateVariantSelection();
     this.variantCache.set(experienceShortId, variant);
 
     return variant;
@@ -104,7 +104,7 @@ class PersonalizeManager {
   /**
    * Simulate variant selection for demo purposes
    */
-  private simulateVariantSelection(experienceId: string): string {
+  private simulateVariantSelection(): string {
     const userType = this.userAttributes.userType as string;
     const location = this.userAttributes.location as string;
 

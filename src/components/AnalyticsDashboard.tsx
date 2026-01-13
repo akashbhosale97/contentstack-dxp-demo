@@ -30,7 +30,7 @@ interface MetricCard {
 
 export function AnalyticsDashboard() {
   const sessionStats = useSessionStats();
-  const [metrics, setMetrics] = useState<MetricCard[]>([
+  const [metrics] = useState<MetricCard[]>([
     {
       label: 'Page Views',
       value: '12,847',
